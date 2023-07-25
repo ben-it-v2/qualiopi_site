@@ -1,0 +1,147 @@
+.indicatorform-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: #00000060;
+}
+
+.indicatorform-container {
+    width: 500px;
+    height: fit-content;
+    max-height: 60%;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    margin: 10% auto;
+    padding: 5px;
+    overflow-y: auto;
+}
+
+.indicatorform-title {
+    width: 100%;
+    height: fit-content;
+    font-family: "Jockey One";
+    font-size: 30px;
+    color: #737373;
+    text-align: center;
+}
+
+.indicatorform-form {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.indicatorform-input {
+    width: 95%;
+    height: 35px;
+    border-radius: 10px;
+    font-family: "Jockey One";
+    font-size: 15px;
+    color: #737373;
+    text-align: left;
+    padding: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.indicatorform-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+}
+
+.indicatorform-cancel, .indicatorform-validate {
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+    font-family: "Jockey One";
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.indicatorform-cancel {
+    background-color: #df3232;
+}
+
+.indicatorform-validate:disabled {
+    background-color: #737373;
+}
+
+.indicatorform-validate {
+    background-color: #45d64a;
+}
+
+.indicatorform-links-list {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.indicatorform-link {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    background-color: #b7b7b7;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.indicatorform-link h1 {
+    font-family: 'Jockey One';
+    font-size: 15px;
+    font-weight: 100;
+    text-align: left;
+    width: 80%;
+    margin-left: 10px;
+}
+
+.indicatorform-link img {
+    display: none;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.indicatorform-link:hover img {
+    display: block;
+}
+
+.indicatorform-add-row {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.indicatorform-add-row .indicatorform-input {
+    width: 70%;
+    height: 30px;
+}
+
+.indicatorform-button {
+    width: 30%;
+    height: 40px;
+    background-color: #0095A1;
+    color: white;
+    font-family: 'Jockey One';
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 11px;
+}

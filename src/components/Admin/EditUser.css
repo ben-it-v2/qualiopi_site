@@ -1,0 +1,112 @@
+.edituserpanel-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: #00000060;
+}
+
+.edituserpanel-container {
+    width: 60%;
+    height: fit-content;
+    max-height: 90%;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    padding: 5px;
+    overflow-y: auto;
+}
+
+.edituserpanel-title {
+    width: 90%;
+    height: 10%;
+    font-family: "Jockey One";
+    font-size: 30px;
+    color: #737373;
+    text-align: center;
+}
+
+.edituserpanel-body {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.edituserpanel-form {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    margin-left: 10%;
+}
+
+.edituserpanel-input {
+    width: 100%;
+    height: 35px;
+    border-radius: 15px;
+    font-family: "Jockey One";
+    font-size: 15px;
+    color: #737373;
+    text-align: left;
+    padding: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.edituserpanel-select {
+    width: 50%;
+    height: 35px;
+    font-family: "Jockey One";
+    font-size: 15px;
+    color: #737373;
+    text-align: left;
+    padding: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-left: 25%;
+}
+
+.edituserpanel-button {
+    width: 60%;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 20%;
+    border-radius: 15px;
+    font-family: "Jockey One";
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+    cursor: pointer;
+}
+
+.edituserpanel-button:disabled {
+    background-color: #737373;
+}
+
+.edituserpanel-button {
+    background-color: #45d64a;
+}
+
+.edituserpanel-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+}
+
+.edituserpanel-close {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.edituserpanel-close:hover {
+    filter: invert(26%) sepia(89%) saturate(4811%) hue-rotate(351deg) brightness(88%) contrast(132%);
+}

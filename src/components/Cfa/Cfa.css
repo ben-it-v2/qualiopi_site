@@ -1,0 +1,245 @@
+.cfa-page {
+    width: 100%;
+    height: 100%;
+}
+
+.cfa-body {
+    width: 100%;
+    height: 90%;
+}
+
+.cfa-container {
+    position: relative;
+    margin: 0 auto;
+    width: 60%;
+    height: 550px;
+}
+
+.cfa-container-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background-color: #5D5D5D;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cfa-container-title-text {
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+    font-family: 'Jockey One';
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cfa-list-container {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 95%;
+    background-color: #EDEDED;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.cfa-list {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    width: 90%;
+    height: 85%;
+    margin-top: 5%;
+    margin-left: 5%;
+    overflow-x: auto;
+}
+
+.cfa-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+.cfa-list::-webkit-scrollbar-track {
+    background: #D9D9D9;
+}
+
+.cfa-list::-webkit-scrollbar-thumb {
+    background: #0095A1;
+    opacity: 0.7;
+}
+
+.cfa-list::-webkit-scrollbar-thumb:hover {
+    opacity: 1;
+}
+
+.cfa-list-add {
+    width: 80%;
+    height: 10%;
+    border: 2px dashed #C3C3C3;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.cfa-list-add img {
+    width: 32px;
+    height: 32px;
+    filter: invert(31%) sepia(17%) saturate(4334%) hue-rotate(268deg) brightness(91%) contrast(78%);
+}
+
+.cfa-list-add:hover {
+    border: 2px dashed #5D5D5D;
+}
+
+.cfa-button {
+    position: relative;
+    cursor: pointer;
+    height: 200px;
+    width: 215px;
+}
+
+.cfa-button-options {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 180px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0.5;
+    transition: opacity 0.2s linear;
+}
+
+.cfa-button-options:hover {
+    opacity: 1;
+}
+
+.cfa-options-container {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: stretch;
+    height: stretch;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: 999;
+}
+
+.cfa-options-list {
+    margin-left: 25px;
+    margin-top: 80px;
+}
+
+.cfa-option {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    height: 25px;
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid white;
+    align-items: center;
+    margin-top: 5px;
+    opacity: 1;
+}
+
+.cfa-option:hover {
+    background-color: white;
+}
+
+.cfa-option:hover h1 {
+    color: #000000;
+}
+
+.cfa-option img {
+    width: 22px;
+    height: 22px;
+    margin-left: 10px;
+    opacity: 1;
+}
+
+.cfa-option h1 {
+    width: 150px;
+    height: fit-content;
+    color: #FFFFFF;
+    font-family: 'Jockey One';
+    font-size: 20px;
+    font-weight: 100;
+    text-align: left;
+    margin-left: 15px;
+    opacity: 1;
+}
+
+.cfa-button:hover .cfa-button-title {
+    width: 150px;
+}
+
+.cfa-button:hover .cfa-button-options {
+    display: block;
+}
+
+.cfa-button-title-container {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: 2;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.cfa-button-title {
+    width: 125px;
+    height: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0;
+    background-color: #974391;
+    transition: width 0.2s linear;
+}
+
+.cfa-button-title-background {
+    width: 15px;
+    height: 6px;
+    z-index: 0;
+    background-color: #632B5F;
+}
+
+.cfa-button-title-text {
+    width: 100%;
+    height: 100%;
+    font-family: 'Jockey One';
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.cfa-button-container {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #C3C3C3;
+}
+
+.cfa-button-container img {
+    position: absolute;
+    opacity: 0.5;
+}

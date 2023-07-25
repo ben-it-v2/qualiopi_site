@@ -1,0 +1,170 @@
+.logspanel-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: #00000060;
+}
+
+.logspanel-container {
+    width: 80%;
+    height: 80%;
+    max-height: 90%;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    padding: 5px;
+    overflow-y: auto;
+}
+
+.logspanel-title {
+    width: 90%;
+    height: 10%;
+    font-family: "Jockey One";
+    font-size: 30px;
+    color: #737373;
+    text-align: center;
+}
+
+.logspanel-body {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.logspanel-containerlist {
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.logspanel-listheader {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.listheader-input-email, .listheader-input-number, .listheader-searchbutton, .listheader-input {
+    height: 80%;
+    border-radius: 15px;
+    font-family: "Jockey One";
+    font-size: 15px;
+    color: #737373;
+}
+
+.listheader-select {
+    height: 80%;
+    font-family: "Jockey One";
+    font-size: 15px;
+    color: #737373;
+    margin-left: 10px;
+}
+
+.listheader-input-email {
+    width: 30%;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.listheader-input {
+    margin-left: 10px;
+}
+
+.listheader-input-number {
+    width: 10%;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.listheader-searchbutton {
+    width: 10%;
+    cursor: pointer;
+    margin-left: 10%;
+}
+
+.logspanel-list {
+    width: 100%;
+    height: 90%;
+    overflow-y: auto;
+}
+
+.logspanel-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+.logspanel-list::-webkit-scrollbar-track {
+    background: #D9D9D9;
+}
+
+.logspanel-list::-webkit-scrollbar-thumb {
+    background: #0095A1;
+    opacity: 0.7;
+}
+
+.logspanel-list::-webkit-scrollbar-thumb:hover {
+    opacity: 1;
+}
+
+.logcontainer {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    background-color: #D9D9D9;
+    margin-top: 10px;
+    padding: 5px;
+    align-items: center;
+}
+
+.logcontainer:hover {
+    background-color: #bdbdbd;
+}
+
+.logcontainer .role-img {
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+}
+
+.logcontainer h1 {
+    font-family: "Jockey One";
+    font-size: 12px;
+    color: #000000;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.logcontainer-desc {
+    width: 90%;
+}
+
+.logcontainer-creationdate {
+    width: 25%;
+}
+
+.logspanel-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+}
+
+.logspanel-close {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.logspanel-close:hover {
+    filter: invert(26%) sepia(89%) saturate(4811%) hue-rotate(351deg) brightness(88%) contrast(132%);
+}

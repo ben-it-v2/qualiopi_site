@@ -1,0 +1,646 @@
+.criterias-page {
+    width: 100%;
+    height: 100%;
+}
+
+.criterias-body {
+    width: 100%;
+    height: 90%;
+}
+
+.criterias-container {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1000px;
+    height: 550px;
+}
+
+.criterias-container-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background-color: #5D5D5D;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.criterias-container-title-text {
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+    font-family: 'Jockey One';
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.criterias-list-container {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 95%;
+    background-color: #EDEDED;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.criterias-list {
+    width: 80%;
+    height: 85%;
+    margin-top: 5%;
+    margin-left: 10%;
+    overflow-x: auto;
+}
+
+.criterias-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+.criterias-list::-webkit-scrollbar-track {
+    background: #D9D9D9;
+}
+
+.criterias-list::-webkit-scrollbar-thumb {
+    background: #0095A1;
+    opacity: 0.7;
+}
+
+.criterias-list::-webkit-scrollbar-thumb:hover {
+    opacity: 1;
+}
+
+.criterias-list-add {
+    width: 80%;
+    height: 50px;
+    border: 2px dashed #C3C3C3;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.criterias-list-add img {
+    width: 32px;
+    height: 32px;
+    filter: invert(31%) sepia(17%) saturate(4334%) hue-rotate(268deg) brightness(91%) contrast(78%);
+}
+
+.criterias-list-add:hover {
+    border: 2px dashed #5D5D5D;
+}
+
+.criteria-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    background-color: #D9D9D9;
+    cursor: pointer;
+    align-items: center;
+}
+
+.criteria-container .id-container {
+    --w: 2rem;
+    width: var(--w);
+    height: var(--w);
+    border-radius: 30px;
+    background-color: #0095A1;
+    margin-left: 1%;
+}
+
+.button-options {
+    display: none;
+    position: absolute;
+    top: -2px;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0.5;
+    transition: opacity 0.2s linear;
+}
+
+.button-options:hover {
+    opacity: 1;
+}
+
+.options-container {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: stretch;
+    height: stretch;
+    background-color: #000000;
+    opacity: 0.7;
+    z-index: 999;
+    align-items: center;
+}
+
+.options-list {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    align-items: center;
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    width: 40%;
+    height: 15px;
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid white;
+    align-items: center;
+    margin-right: 10%;
+    opacity: 1;
+}
+
+.option:hover {
+    background-color: white;
+}
+
+.option:hover h1 {
+    color: #000000;
+}
+
+.option img {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    opacity: 1;
+}
+
+.option h1 {
+    width: 150px;
+    height: fit-content;
+    color: #FFFFFF;
+    font-family: 'Jockey One';
+    font-size: 15px;
+    font-weight: 100;
+    text-align: left;
+    margin-left: 15px;
+    opacity: 1;
+}
+
+.criteria-container:hover .button-options {
+    display: block;
+}
+
+.criteria-panel {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+    margin-top: 10px;
+}
+
+.criteria-panel .indicators-container {
+    display: none;
+    width: 100%;
+    height: fit-content;
+    background-color: #D9D9D9;
+}
+
+.indicators-container .line {
+    width: 100%;
+    height: 2px;
+    background-color: #8A8A8A;
+}
+
+.indicators-container .indicators-list {
+    width: 90%;
+    height: 90%;
+    max-height: 330px;
+    margin: 5%;
+    margin-top: 2%;
+    overflow-x: auto;
+}
+
+.indicators-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+.indicators-list::-webkit-scrollbar-track {
+    background: #D9D9D9;
+}
+
+.indicators-list::-webkit-scrollbar-thumb {
+    background: #0095A1;
+    opacity: 0.7;
+}
+
+.indicators-list::-webkit-scrollbar-thumb:hover {
+    opacity: 1;
+}
+
+.id-container .id-text {
+    width: 100%;
+    height: 100%;
+    font-family: "Jockey One";
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.criteria-container .data-container {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: fit-content;
+    margin-left: 1%;
+}
+
+.data-container .criteria-name {
+    font-family: "Jockey One";
+    font-size: 20px;
+    color: #974391;
+    height: 7px;
+    margin-top: 0;
+}
+
+.data-container .criteria-description {
+    font-family: "Jockey One";
+    font-size: 10px;
+    color: #000000;
+    height: fit-content;
+    margin-top: 0;
+}
+
+.progressbar-container {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: fit-content;
+    margin-left: 1%;
+}
+
+.progressbar-container .progressbar-detail {
+    width: 100%;
+    height: 5px;
+    font-family: "Jockey One";
+    font-size: 10px;
+    text-align: center;
+    color: #8A8A8A;
+    margin-top: 0;
+}
+
+.progressbar-container .progressbar-background {
+    width: 100%;
+    height: 7px;
+    background-color: #B0B0B0;
+}
+
+.progressbar-background .progressbar {
+    width: 50%;
+    height: 100%;
+    background-color: #974391;
+}
+
+.indicator-container {
+    position: relative;
+    width: 90%;
+    height: fit-content;
+    margin-top: 10px;
+}
+
+.indicator-container .id-container {
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    z-index: 2;
+    background-color: #974391;
+    width: 30px;
+    height: 30px;
+}
+
+.indicator-container .id-container-shadow {
+    position: absolute;
+    top: 34px;
+    left: 0px;
+    z-index: 0;
+    background-color: #632B5F;
+    width: 5px;
+    height: 4px;
+}
+
+.indicator-background {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    min-height: 80px;
+    background-color: #BCBCBC;
+    margin-left: 5px;
+    z-index: 1;
+    align-items: center;
+    cursor: pointer;
+}
+
+.indicator-background:hover .button-options {
+    display: block;
+}
+
+.indicator-container .indicator-data {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: fit-content;
+    margin-left: 35px;
+}
+
+.indicator-data .indicator-name {
+    font-family: "Jockey One";
+    font-size: 20px;
+    color: #974391;
+    height: 7px;
+    margin-top: 0;
+}
+
+.indicator-data .indicator-description {
+    font-family: "Jockey One";
+    font-size: 10px;
+    color: #000000;
+    height: fit-content;
+    margin-top: 0;
+}
+
+.indicator-container .indicator-data-bis {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: fit-content;
+}
+
+.indicator-data-bis .status-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    margin-top: 5px;
+}
+
+.status-container .status-title {
+    font-family: "Jockey One";
+    font-size: 10px;
+    color: #737373;
+    width: 50%;
+    height: 100%;
+    margin-top: 0;
+    text-align: center;
+}
+
+.status-container .status-value {
+    font-family: "Jockey One";
+    font-size: 10px;
+    color: #0095A1;
+    width: 50%;
+    height: 100%;
+    margin-top: 0;
+    margin-left: 1px;
+    text-align: left;
+}
+
+.indicator-data-bis .files-amount {
+    font-family: "Jockey One";
+    font-size: 10px;
+    color: #737373;
+    width: 100%;
+    height: 7px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.indicator-subcontainer {
+    display: none;
+    width: 100%;
+    height: fit-content;
+    background-color: #BCBCBC;
+    margin-left: 5px;
+    padding-bottom: 5px;
+}
+
+.indicator-subcontainer .expected-level {
+    font-family: "Jockey One";
+    font-size: 10px;
+    color: #000000;
+    width: 95%;
+    height: fit-content;
+    margin-left: 5px;
+}
+
+.indicator-subcontainer .elements-proof {
+    font-family: "Jockey One";
+    font-size: 10px;
+    color: #000000;
+    width: 95%;
+    height: fit-content;
+    margin-left: 5px;
+}
+
+.indicator-subcontainer .drop-area {
+    position: relative;
+    width: 90%;
+    height: 100px;
+    border: 1px dashed #737373;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.indicator-subcontainer input[type='file'] {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: #0095A1;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.indicator-subcontainer input[type='file'] + label {
+    height: 0px;
+}
+
+.drop-area .proofs-container-help {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    width: 100%;
+}
+
+.drop-area .proofs-container-title {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    font-family: "Jockey One";
+    font-size: 13px;
+    font-weight: 700;
+    color: #494949;
+    text-align: center;
+    margin-top: 0;
+}
+
+.drop-area .proofs-container-text {
+    width: 100%;
+    height: 0px;
+    font-family: "Jockey One";
+    font-size: 10px;
+    color: #737373;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.indicator-subcontainer .proofs-list-container {
+    width: 85%;
+    height: 100px;
+    border: 1px dashed #737373;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.proofs-list-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.proofs-list-container::-webkit-scrollbar-track {
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 1px solid rgba(87, 87, 87, 0.5);
+}
+
+.proofs-list-container::-webkit-scrollbar-thumb {
+    background: #0095A1;
+    opacity: 0.7;
+}
+
+.proofs-list-container::-webkit-scrollbar-thumb:hover {
+    opacity: 1;
+}
+
+.proofs-list-container .proofs-list {
+    height: fit-content;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.proofs-list .proof-element {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    background-color: #9d9d9d;
+    border-radius: 10px;
+}
+
+.proof-element h1 {
+    top: 60%;
+    width: 40%;
+    height: fit-content;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: "Jockey One";
+    font-size: 10px;
+    text-align: left;
+    color: black;
+}
+
+.proof-element img {
+    margin-left: 5px;
+    --w: 35px;
+    width: var(--w);
+    height: var(--w);
+}
+
+.proof-element .proof-options {
+    position: absolute;
+    right: 10px;
+    top: 4.5px;
+    display: none;
+    width: fit-content;
+    height: 32px;
+}
+
+.proof-element:hover .proof-options {
+    display: block;
+}
+
+.proof-options img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.indicators-list-add {
+    width: 80%;
+    height: 50px;
+    border: 2px dashed #C3C3C3;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.indicators-list-add img {
+    width: 32px;
+    height: 32px;
+    filter: invert(31%) sepia(17%) saturate(4334%) hue-rotate(268deg) brightness(91%) contrast(78%);
+}
+
+.indicators-list-add:hover {
+    border: 2px dashed #5D5D5D;
+}
+
+.links-list {
+    margin-top: 0px;
+    line-height: 20px;
+}
+
+.links-list .link {
+    font-family: "Jockey One";
+    font-size: 10px;
+    text-align: left;
+}
+
+.link a {
+    font-family: "Jockey One";
+    font-size: 12px;
+    text-align: left;
+    color: #0095A1;
+}

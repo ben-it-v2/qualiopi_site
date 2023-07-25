@@ -1,0 +1,79 @@
+.criteriaform-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: #00000060;
+}
+
+.criteriaform-container {
+    width: 500px;
+    height: fit-content;
+    max-height: 80%;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    margin: 10% auto;
+    padding: 5px;
+}
+
+.criteriaform-title {
+    width: 100%;
+    height: fit-content;
+    font-family: "Jockey One";
+    font-size: 30px;
+    color: #737373;
+    text-align: center;
+}
+
+.criteriaform-form {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.criteriaform-input {
+    width: 95%;
+    height: 35px;
+    border-radius: 10px;
+    font-family: "Jockey One";
+    font-size: 15px;
+    color: #737373;
+    text-align: left;
+    padding: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.criteriaform-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+}
+
+.criteriaform-cancel, .criteriaform-validate {
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+    font-family: "Jockey One";
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.criteriaform-cancel {
+    background-color: #df3232;
+}
+
+.criteriaform-validate:disabled {
+    background-color: #737373;
+}
+
+.criteriaform-validate {
+    background-color: #45d64a;
+}
