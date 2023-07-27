@@ -14,12 +14,13 @@ import logo_open from '../../assets/file_open.png';
 import logo_fdelete from '../../assets/file_delete.png';
 
 function ProofElement(params) {
-    const { post } = AxiosHandler();
+    const { post, get } = AxiosHandler();
     const { auth } = useAuth();
 
     const fileName = params.filename;
     const extension = /(?:\.([^.]+))?$/.exec(fileName)[1];
     const proofID = params.proofID;
+    const proofElementID = `proof-element-${params.indicator_id}-${proofID}`;
 
     const PDFFILE = 0;
     const PNGFILE = 1;
@@ -111,16 +112,54 @@ function ProofElement(params) {
         }
     }
 
-    const onDownloadFileClicked = () => {
+    const onDownloadFileClicked = async () => {
+        const response = await post("indicator/downloadfile", {
+            token: auth.accessToken,
+            id: params.indicator_id,
+            filename: fileName
+        }, {
+            responseType: 'blob',
+        });
 
+        if (response.status === 200) {
+            try {
+                // Create a temporary URL to the downloaded file
+                const url = window.URL.createObjectURL(new Blob([response.data]));
+
+                // Create a link element to init the download
+                const link = document.createElement('a');
+                link.href = url;
+                link.setAttribute('download', fileName);
+                
+                // Append the link to the document and click it to start the download
+                document.body.appendChild(link);
+                link.click();
+
+                // Clean up the temporary URL
+                window.URL.revokeObjectURL(url);
+            } catch(error) {
+                console.error('Error downloading the file:', error);
+            }
+        }
     }
 
-    const onDeleteFileClicked = () => {
+    const onDeleteFileClicked = async () => {
+        const response = await post("indicator/deletefile", {
+            token: auth.accessToken,
+            id: params.indicator_id,
+            filename: fileName
+        });
 
+        if (response.status === 200) {
+            let proofElement = document.getElementById(proofElementID);
+            if (proofElement) {
+                proofElement.remove();
+            }
+        }
     }
 
     return (
-        <div className="proof-element">
+        <div className="proof-element" id={proofElementID}>
             <img src={extension === "pdf" ? logo_pdf : logo_img} alt="logo"></img>
             <h1>{fileName}</h1>
             <div className="proof-options">
